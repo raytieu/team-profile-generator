@@ -136,7 +136,7 @@ function renderTeam() {
       throw error;
     }
 
-    console.log("Success!");
+    console.log("Successfully rendered team!");
 
   })
 }
