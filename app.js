@@ -96,7 +96,7 @@ function engineerInfo() {
       message: "Engineer's Github username:"
     }
   ]).then(function(data) {
-    const engineer = new Engineer(data.engineerName, data.engineerId, data.engineerEmail, data.engineerOffice);
+    const engineer = new Engineer(data.engineerName, data.engineerId, data.engineerEmail, data.engineerGithub);
     team.push(engineer);
     addToTeam();
   });
@@ -121,11 +121,11 @@ function internInfo() {
     },
     {
       type: "input",
-      name: "internOffice",
+      name: "internSchool",
       message: "Intern's School:"
     }
   ]).then(function(data) {
-    const intern = new Intern(data.internName, data.internId, data.internEmail, data.internOffice);
+    const intern = new Intern(data.internName, data.internId, data.internEmail, data.internSchool);
     team.push(intern);
     addToTeam();
   });
